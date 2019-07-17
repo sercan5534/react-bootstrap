@@ -1,0 +1,26 @@
+{
+    "globals": { },
+    "verbose": true,
+    "restoreMocks": true,
+    "testMatch": [
+        "**/?(*.)(spec|test).js"
+    ],
+    "collectCoverageFrom": [
+        "**/src/**/*.{js,jsx}"
+    ],
+    "coveragePathIgnorePatterns":[
+        "<rootDir>/node_modules/",
+        "<rootDir>/config",
+        "<rootDir>/coverage",
+        "<rootDir>/dist",
+        "<rootDir>/report",
+        "<rootDir>/template"
+    ],
+    "moduleNameMapper": {
+        ".+\\.(css|sass)$" : "identity-obj-proxy",
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/assetsTransformer.js"
+    },
+    "coverageDirectory": "report",
+    "coverageReporters": ["json", "lcov", "text","html"]
+  
+  }

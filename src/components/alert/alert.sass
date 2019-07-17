@@ -1,0 +1,45 @@
+.ins-poppup-alert-column
+    position: absolute
+    right: 20px
+    bottom: 20px
+    display: flex
+    flex-direction: column
+    width: 315px
+
+.ins-poppup-alert-wrapper
+    border-bottom: 1px solid #c3cad1
+    background-color: #f0f4f8
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)
+    width: 313px
+    height: 57px
+    box-sizing: border-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    z-index: 2
+    
+    &.error
+        border-left: 3px solid #ff0000
+    
+    &.success
+        border-left: 3px solid #00d721
+    
+    &.warning
+        border-left: 3px solid #ffde00
+    .alert-close
+        margin-right: 6px
+        width: 12px
+        height: 12px
+        font-size: 12px
+        cursor: pointer
+    .alert-text-wrapper
+        display: flex
+        flex-direction: column
+        font-size: 12px    
+        color: #2d373c
+        .msg
+        .title
+            margin-bottom: 3px
+            margin-top: 6px
+            font-weight: bold
+
