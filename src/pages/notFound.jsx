@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Dashboard = () => {
+const NotFound = () => {
     return (
         <div>
-            Dashboard
+            Not found
         </div>
     )
 }
 
-export default Dashboard
+export default NotFound

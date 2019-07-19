@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import { connect } from "react-redux";
-import { history } from "./../stores/index.jsx";
+import { history } from "./../store.jsx";
 import axios from "axios";
 import type from "prop-types";
 

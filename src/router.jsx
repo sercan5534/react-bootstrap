@@ -17,14 +17,17 @@ import en from "./i18n/en.json";
 import tr from "./i18n/tr.json";
 
 //Layout
-import AppLayout from "./layouts/appLayout/index.jsx";
+import AppLayout from "./layouts/index.jsx";
+import LoginLayout from "./layouts/loginLayout.jsx";
 
 //Pages
-import Dashboard from "./pages/index.jsx";
+import Dashboard from "./pages/dashboard.jsx";
+import Login from "./pages/login.jsx";
+import NotFound from "./pages/notFound.jsx";
 
 //Store - redux
 import { Provider } from "react-redux";
-import configureStore,{history} from "./stores/index.jsx";
+import configureStore,{history} from "./store.jsx";
 import { ConnectedRouter } from "connected-react-router";
 
 //Util
@@ -53,7 +56,7 @@ const languages = [
 ];
 store.dispatch(initialize({languages, options:{ defaultLanguage: localStorage.getItem("lang") || "en", renderToStaticMarkup:false}}));
 store.dispatch(addTranslationForLanguage(en, "en"));
-store.dispatch(addTranslationForLanguage(de, "tr"));
+store.dispatch(addTranslationForLanguage(tr, "tr"));
 
 //Set Existing Token
 let userData = sessionStorage.getItem("user_data");

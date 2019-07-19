@@ -1,4 +1,3 @@
-import SI from "./../enums/auth.jsx";
 import setAuthToken from "./../utils/filter.jsx";
 import { getTranslate } from "react-localize-redux";
 

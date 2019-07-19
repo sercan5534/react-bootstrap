@@ -2,7 +2,7 @@
 import { createStore, applyMiddleware,compose } from "redux";
 import { createBrowserHistory } from "history";
 import thunk from "redux-thunk";
-import reducers from "./../reducers/index.jsx";
+import reducers from "./reducers/index.jsx";
 import { routerMiddleware } from "connected-react-router";
 
 //History

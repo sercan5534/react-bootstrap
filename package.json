@@ -12,10 +12,10 @@
     "lint": "eslint .eslintrc.json -o report/report.html",
     "prodBuild": "NODE_ENV=production npm i",
     "serve": "nodemon --exec babel-node ./src/index.js",
-    "dev": "npm run build-client && npm run serve",
-    "debug": "nodemon --inspect --exec babel-node ./src/index.js 443",
+    "dev": "npm run build && npm run serve",
+    "debug": "nodemon --inspect --exec babel-node ./src/index.js 443"
   },
-  "author": "sercan.ozen",
+  "author": "sercan özen",
   "license": "ISC",
   "devDependencies": {
     "babel": "^6.23.0",
